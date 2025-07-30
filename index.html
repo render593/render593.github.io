@@ -1,83 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Render 593 - Manual de Usuario</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto+Mono&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      background: #0d0d0d;
-      color: #00ffcc;
-      font-family: 'Roboto Mono', monospace;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #1a1a1a;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 2px solid #00ffcc;
-    }
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2.5rem;
-      margin: 0;
-      color: #00ffff;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #00ffcc;
-      border-left: 5px solid #00ffff;
-      padding-left: 10px;
-    }
-    p {
-      color: #cccccc;
-    }
-    .icon {
-      font-size: 1.5rem;
-      margin-right: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #111;
-      color: #666;
-      font-size: 0.9rem;
-      border-top: 1px solid #222;
-    }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Render 593 - Manual de Usuario</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+	<style>
+		#particles-js {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Roboto Mono', monospace;
+			background-color: #000; /* para mejor contraste */
+			color: white;
+		}
+	</style>
 </head>
+
 <body>
-  <header>
-    <h1>🕹️ Render 593</h1>
-    <p>Bienvenido al Manual de Usuario</p>
-  </header>
+	<!-- Partículas -->
+	<div id="particles-js"></div>
 
-  <section>
-    <p>
-      <strong>Render 593</strong> es un proyecto de desarrollo de videojuegos que busca brindar experiencias únicas, creativas y visualmente impactantes. Nos apasiona transformar ideas en mundos jugables, explorables y memorables.
-    </p>
+	<header>
+		<h1>🕹️ Render 593</h1>
+		<p>Render 593: creamos videojuegos divertidos, originales y llenos de estilo</p>
+	</header>
 
-    <h2>🎯 Misión</h2>
-    <p>
-      Diseñar experiencias de juego inolvidables y llenas de emoción, capaces de inspirar, desafiar y unir a las personas mediante entornos digitales envolventes.<br>
-      En Render 593, transformamos ideas en aventuras y la pasión en jugabilidad auténtica.
-    </p>
 
-    <h2>🚀 Visión</h2>
-    <p>
-      Consolidarnos como un referente en Ecuador y en el ámbito internacional por crear videojuegos originales, independientes y con un sello distintivo, dejando una marca en la cultura gamer global.<br>
-      Aspiramos a que cada uno de nuestros títulos se perciba como un mundo digno de ser descubierto.
-    </p>
-  </section>
 
-  <footer>
-    © 2025 Render 593 | Creado por Inti Poaquiza Azogue y equipo
-  </footer>
+
+	<section class="video-section">
+		<h2>🎥 Presentación de Render 593</h2>
+		<div class="video-container">
+			<iframe
+				src="https://www.youtube.com/embed/UD5OmA69834?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0&showinfo=0&playsinline=1"
+				title="Presentación de Render 593"
+				frameborder="0"
+				allow="autoplay; encrypted-media"
+				allowfullscreen>
+			</iframe>
+		</div>
+	</section>
+
+	<section class="mission-vision">
+		<div class="card mission">
+			<div class="icon">
+			<i class="fas fa-bullseye"></i>
+			</div>
+			<h3>Misión</h3>
+			<p>Crear videojuegos únicos, creativos y visualmente impactantes que conecten emocionalmente con los jugadores.</p>
+		</div>
+		<div class="card vision">
+			<div class="icon">
+			<i class="fas fa-eye"></i>
+			</div>
+			<h3>Visión</h3>
+			<p>Convertirnos en un referente de innovación en el desarrollo de videojuegos dentro y fuera del país.</p>
+  		</div>
+	</section>
+
+	<section class="team">
+		<h2>🎮 Nuestro Equipo</h2>
+		<div class="team-grid">
+			<div class="member">
+				<img src="assets/belen.jpg" alt="Belén Raura">
+				<h3>Belén Raura</h3>
+			</div>
+			<div class="member">
+				<img src="assets/mateo.png" alt="Mateo Macas">
+				<h3>Mateo Macas</h3>
+			</div>
+			<div class="member">
+				<img src="assets/inti.jpg" alt="Inti Poaquiza">
+				<h3>Inti Poaquiza Azogue</h3>
+			</div>
+			<div class="member">
+				<img src="assets/jose.png" alt="José Luis Andino">
+				<h3>José Luis Andino</h3>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		© 2025 Render 593 | intiinside
+	</footer>
+
+	<!-- Librería Particles.js -->
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+	<!-- Configuración de Partículas -->
+	<script>
+		particlesJS("particles-js", {
+			"particles": {
+				"number": { "value": 60 },
+				"color": { "value": "#ffffff" },
+				"shape": {
+					"type": "circle",
+					"stroke": { "width": 0, "color": "#000000" }
+				},
+				"opacity": {
+					"value": 0.5,
+					"random": false
+				},
+				"size": {
+					"value": 3,
+					"random": true
+				},
+				"line_linked": {
+					"enable": true,
+					"distance": 150,
+					"color": "#ffffff",
+					"opacity": 0.4,
+					"width": 1
+				},
+				"move": {
+					"enable": true,
+					"speed": 2
+				}
+			},
+			"interactivity": {
+				"detect_on": "canvas",
+				"events": {
+					"onhover": { "enable": true, "mode": "repulse" },
+					"onclick": { "enable": true, "mode": "push" }
+				},
+				"modes": {
+					"repulse": { "distance": 100, "duration": 0.4 },
+					"push": { "particles_nb": 4 }
+				}
+			},
+			"retina_detect": true
+		});
+	</script>
+
+	<!-- Tu JS personalizado -->
+	<script src="js/script.js"></script>
 </body>
 </html>
